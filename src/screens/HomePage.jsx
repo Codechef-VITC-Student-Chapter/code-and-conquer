@@ -2,8 +2,12 @@ import React from 'react';
 import BackgroundWrapper from '../components/BackgroundWrapper';
 import { useState, useEffect } from 'react';
 
-function HomePage() {
-  const [timer, setTimer] = useState((20 * 24 * 60 * 60 * 1000));
+function HomePage() { 
+  const targetDate = new Date('2024-09-09T00:00:00'); 
+  const currentTime = new Date();
+  const timeDifference = targetDate - currentTime;
+
+  const [timer, setTimer] = useState(timeDifference);
 
   useEffect(() => {
     const interval = setInterval(() => {
