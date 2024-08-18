@@ -15,7 +15,6 @@ const NavBar = () => {
                 <Link to="timeline" spy={true} smooth={true} offset={-150} duration={500} className='font-semibold hover:underline duration-300 hover:duration-300 cursor-pointer'>Timeline</Link>
                 <Link to="sponsors" spy={true} smooth={true} offset={-150} duration={500} className='font-semibold hover:underline duration-300 hover:duration-300 cursor-pointer'>Sponsors</Link>
                 <Link to="faqs" spy={true} smooth={true} offset={-150} duration={500} className='font-semibold hover:underline duration-300 hover:duration-300 cursor-pointer'>FAQs</Link>
-                <Link to="contact" spy={true} smooth={true} offset={-150} duration={500} className='font-semibold hover:underline duration-300 hover:duration-300 cursor-pointer'>Contact</Link>
             </ul>
         </div>
         <div className='flex items-center gap-4'>

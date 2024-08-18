@@ -4,7 +4,6 @@ import AboutUs from './screens/AboutUs';
 import Sponsors from './screens/Sponsors';
 import Timeline from './screens/Timeline';
 import FAQs from './screens/FAQs';
-import Contact from './screens/Contact';
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
       <Timeline />
       <Sponsors />
       <FAQs />
-      <Contact />
     </div>
   );
 }
