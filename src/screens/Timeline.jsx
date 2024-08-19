@@ -44,9 +44,9 @@ const events = [
 const Timeline = () => {
   return (
     <div className="h-screen flex flex-col justify-evenly">
-      <div id="sponsors" className="text-7xl text-white text-center">
+      <span className="font-monoton text-[40px] md:text-[75px] font-normal  md:leading-[140px] leading-[100px] text-center uppercase text-white">
         Timeline
-      </div>
+      </span>
       <div className="relative w-screen overflow-x-auto">
         <div className="grid grid-cols-5 gap-4 p-6 w-[1500px]">
           {/* Top Row */}

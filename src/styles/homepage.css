@@ -1,0 +1,52 @@
+/* Default shadow for "CODE" */
+.text-code-shadow {
+    text-shadow: -9px 4px 0 rgba(255, 60, 0, 1);
+    /* #FF3C00 */
+}
+
+/* Default shadow for "&" */
+.text-amp-shadow {
+    text-shadow: -9px 4px 0 rgba(33, 1, 60, 1);
+    /* #21013C */
+}
+
+/* Default shadow for "CONQUER" */
+.text-conquer-shadow {
+    text-shadow: -9px 4px 0 rgba(0, 74, 173, 1);
+    /* #004AAD */
+}
+
+/* Responsive shadows */
+@media (max-width: 768px) {
+    .text-code-shadow {
+        text-shadow: -6px 3px 0 rgba(255, 60, 0, 1);
+        /* Adjust shadow for smaller screens */
+    }
+
+    .text-amp-shadow {
+        text-shadow: -6px 3px 0 rgba(33, 1, 60, 1);
+        /* Adjust shadow for smaller screens */
+    }
+
+    .text-conquer-shadow {
+        text-shadow: -6px 3px 0 rgba(0, 74, 173, 1);
+        /* Adjust shadow for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-code-shadow {
+        text-shadow: -4px 2px 0 rgba(255, 60, 0, 1);
+        /* Further adjust shadow for very small screens */
+    }
+
+    .text-amp-shadow {
+        text-shadow: -4px 2px 0 rgba(33, 1, 60, 1);
+        /* Further adjust shadow for very small screens */
+    }
+
+    .text-conquer-shadow {
+        text-shadow: -4px 2px 0 rgba(0, 74, 173, 1);
+        /* Further adjust shadow for very small screens */
+    }
+}

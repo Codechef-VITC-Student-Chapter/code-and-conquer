@@ -9,14 +9,13 @@ import FAQs from './screens/FAQs';
 function App() {
   return (
     <div className="flex flex-col items-center justify-center wrapper-bg">
+      <BackgroundWrapper />
       <NavBar />
-
       <HomePage />
       <AboutUs />
       <Timeline />
       <Sponsors />
       <FAQs />
-      <BackgroundWrapper />
     </div>
   );
 }
