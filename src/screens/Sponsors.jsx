@@ -1,9 +1,11 @@
 import React from 'react';
+import apple from '../assets/sponsors/co-sponsor.png';
+import hyndai from '../assets/sponsors/main-sponsor.png';
 
 const Sponsors = () => {
   return (
     <div className="flex flex-col items-center justify-center sponsors-bg">
-      <div id="sponsors" className="text-6xl text-white h-[100vh] mb-10">
+      <div id="sponsors" className="text-6xl text-white min-h-screen mb-10">
         <div className="flex flex-row justify-center space-x-3">
           <span className="font-monoton text-[40px] md:text-[75px] font-normal  md:leading-[140px] leading-[100px] text-center uppercase">
             OUR &nbsp;&nbsp;&nbsp;&nbsp; Sponsors
@@ -15,11 +17,7 @@ const Sponsors = () => {
             title sponsor
           </div>
 
-          <img
-            src="src\assets\sponsors\main-sponsor.png"
-            alt="Sponsor"
-            className="w-[180px] h-[180px] "
-          />
+          <img src={hyndai} alt="Sponsor" className="w-[180px] h-[180px] " />
         </div>
 
         <div className="flex items-center justify-center mb-8">
@@ -28,27 +26,11 @@ const Sponsors = () => {
           </div>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-12">
-          <img
-            src="src/assets/sponsors/co-sponsor.png"
-            alt="Sponsor"
-            className="w-32 h-32"
-          />
-          <img
-            src="src/assets/sponsors/co-sponsor.png"
-            alt="Sponsor"
-            className="w-32 h-32"
-          />
+          <img src={apple} alt="Sponsor" className="w-32 h-32" />
+          <img src={apple} alt="Sponsor" className="w-32 h-32" />
 
-          <img
-            src="src/assets/sponsors/co-sponsor.png"
-            alt="Sponsor"
-            className="w-32 h-32"
-          />
-          <img
-            src="src/assets/sponsors/co-sponsor.png"
-            alt="Sponsor"
-            className="w-32 h-32"
-          />
+          <img src={apple} alt="Sponsor" className="w-32 h-32" />
+          <img src={apple} alt="Sponsor" className="w-32 h-32" />
         </div>
       </div>
     </div>

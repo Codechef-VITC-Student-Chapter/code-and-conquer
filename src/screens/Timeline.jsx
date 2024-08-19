@@ -44,11 +44,11 @@ const events = [
 const Timeline = () => {
   return (
     <div className="flex flex-col items-center justify-center timeline-bg">
-      <div className="h-screen flex flex-col justify-evenly">
-        <span className="font-monoton text-[40px] md:text-[75px] font-normal  md:leading-[140px] leading-[100px] text-center uppercase text-white">
+      <div className="max-w-full min-h-screen flex flex-col justify-evenly">
+        <span className="font-monoton text-[40px] md:text-[75px] font-normal md:leading-[140px] leading-[100px] text-center uppercase text-white">
           Timeline
         </span>
-        <div className="relative w-screen overflow-x-auto">
+        <div className="relative w-full overflow-x-auto">
           <div className="grid grid-cols-5 gap-4 p-6 w-[1500px]">
             {/* Top Row */}
             {events.map((event, index) => (

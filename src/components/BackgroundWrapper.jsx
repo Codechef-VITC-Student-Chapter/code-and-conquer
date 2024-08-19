@@ -10,8 +10,8 @@ const BackgroundWrapper = ({ children }) => {
 
     // Initialize canvas and points
     const initHeader = () => {
-      width = window.innerWidth;
-      height = window.innerHeight;
+      width = document.documentElement.clientWidth;
+      height = document.documentElement.clientHeight;
       target = { x: width / 2, y: height / 2 };
 
       const largeHeader = largeHeaderRef.current;

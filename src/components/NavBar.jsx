@@ -50,9 +50,9 @@ const NavBar = () => {
       <div
         className={`${
           isMenuOpen ? 'flex' : 'hidden'
-        } flex-col absolute top-[calc(100%+16px)] left-0 w-full bg-black text-white p-4 md:relative md:flex md:flex-row md:gap-8 md:w-auto md:p-0`}
+        } flex-col absolute top-[calc(100%+16px)] left-0 w-full text-white p-4 md:relative md:flex md:flex-row md:gap-8 md:w-auto md:p-0`}
       >
-        <ul className="flex flex-col gap-4 md:flex-row md:gap-8">
+        <ul className="flex flex-col gap-4 bg-gray-900 sm:bg-none bg-opacity-65 sm:bg-opacity-0 md:flex-row md:gap-8">
           {['Home', 'About Us', 'Timeline', 'Sponsors', 'FAQs'].map(
             (section) => (
               <Link
