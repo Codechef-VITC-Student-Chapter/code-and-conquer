@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .navbar-bg{
     background: linear-gradient(
   90deg,
@@ -11,15 +10,14 @@
   rgba(35, 1, 62, 0.5) 100%
 );
 
+
 }
 
-.wrapper-bg{
-    background: linear-gradient(
-        to bottom right,
-  #FF3C00 0%,
-  #21013C 25%,
-  #21013C 50%,
-  #02000D 75%,
-  #004AAD 100%
-);
+.wrapper-bg {
+  background: linear-gradient(to bottom right,
+      #FF3C00 0%,
+      #21013C 15%,
+      #21013C 50%,
+      #02000D 85%,
+      #004AAD 100%);
 }
