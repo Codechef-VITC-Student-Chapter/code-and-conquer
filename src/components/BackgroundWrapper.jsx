@@ -1,13 +1,12 @@
-import React, { Children, useEffect, useRef } from "react";
-import { TweenLite, Circ } from "gsap";
+import React, { useEffect, useRef } from 'react';
+import { TweenLite, Circ } from 'gsap';
 
-const BackgroundWrapper = ({children}) => {
+const BackgroundWrapper = ({ children }) => {
   const largeHeaderRef = useRef(null);
   const canvasRef = useRef(null);
 
   useEffect(() => {
     let width, height, ctx, points, target;
-    let animateHeader = true;
 
     // Initialize canvas and points
     const initHeader = () => {
@@ -16,19 +15,19 @@ const BackgroundWrapper = ({children}) => {
       target = { x: width / 2, y: height / 2 };
 
       const largeHeader = largeHeaderRef.current;
-      largeHeader.style.height = height + "px";
+      largeHeader.style.height = height + 'px';
 
       const canvas = canvasRef.current;
       canvas.width = width;
       canvas.height = height;
-      ctx = canvas.getContext("2d");
+      ctx = canvas.getContext('2d');
 
       // Create points
       points = [];
       for (let x = 0; x < width; x += width / 20) {
         for (let y = 0; y < height; y += height / 20) {
-          const px = x + Math.random() * width / 20;
-          const py = y + Math.random() * height / 20;
+          const px = x + (Math.random() * width) / 20;
+          const py = y + (Math.random() * height) / 20;
           const p = { x: px, originX: px, y: py, originY: py };
           points.push(p);
         }
@@ -43,9 +42,7 @@ const BackgroundWrapper = ({children}) => {
               closest.push(p2);
             } else {
               for (let i = 0; i < 5; i++) {
-                if (
-                  getDistance(p1, p2) < getDistance(p1, closest[i])
-                ) {
+                if (getDistance(p1, p2) < getDistance(p1, closest[i])) {
                   closest[i] = p2;
                   break;
                 }
@@ -58,7 +55,11 @@ const BackgroundWrapper = ({children}) => {
 
       // Assign circles to points
       points.forEach((point) => {
-        const c = new Circle(point, 2 + Math.random() * 2, "rgba(255,255,255,0.3)");
+        const c = new Circle(
+          point,
+          2 + Math.random() * 2,
+          'rgba(255,255,255,0.3)'
+        );
         point.circle = c;
       });
     };
@@ -86,41 +87,36 @@ const BackgroundWrapper = ({children}) => {
     }
 
     const shiftPoint = (p) => {
-      TweenLite.to(
-        p,
-        1 + Math.random(),
-        {
-          x: p.originX - 50 + Math.random() * 100,
-          y: p.originY - 50 + Math.random() * 100,
-          ease: Circ.easeInOut,
-          onComplete: () => shiftPoint(p),
-        }
-      );
+      TweenLite.to(p, 1 + Math.random(), {
+        x: p.originX - 50 + Math.random() * 100,
+        y: p.originY - 50 + Math.random() * 100,
+        ease: Circ.easeInOut,
+        onComplete: () => shiftPoint(p),
+      });
     };
 
     const animate = () => {
-      if (animateHeader) {
-        ctx.clearRect(0, 0, width, height);
-        points.forEach((point) => {
-          const distance = getDistance(target, point);
-          if (Math.abs(distance) < 4000) {
-            point.active = 0.3;
-            point.circle.active = 0.6;
-          } else if (Math.abs(distance) < 20000) {
-            point.active = 0.1;
-            point.circle.active = 0.3;
-          } else if (Math.abs(distance) < 40000) {
-            point.active = 0.02;
-            point.circle.active = 0.1;
-          } else {
-            point.active = 0;
-            point.circle.active = 0;
-          }
+      ctx.clearRect(0, 0, width, height);
+      points.forEach((point) => {
+        const distance = getDistance(target, point);
+        if (Math.abs(distance) < 4000) {
+          point.active = 0.3;
+          point.circle.active = 0.6;
+        } else if (Math.abs(distance) < 20000) {
+          point.active = 0.1;
+          point.circle.active = 0.3;
+        } else if (Math.abs(distance) < 40000) {
+          point.active = 0.02;
+          point.circle.active = 0.1;
+        } else {
+          point.active = 0;
+          point.circle.active = 0;
+        }
 
-          drawLines(point);
-          point.circle.draw();
-        });
-      }
+        drawLines(point);
+        point.circle.draw();
+      });
+
       requestAnimationFrame(animate);
     };
 
@@ -136,26 +132,25 @@ const BackgroundWrapper = ({children}) => {
     };
 
     const addListeners = () => {
-      if (!("ontouchstart" in window)) {
-        window.addEventListener("mousemove", mouseMove);
+      if (!('ontouchstart' in window)) {
+        window.addEventListener('mousemove', mouseMove);
       }
-      window.addEventListener("scroll", scrollCheck);
-      window.addEventListener("resize", resize);
+      window.addEventListener('resize', resize);
     };
 
     const mouseMove = (e) => {
-      target.x = e.pageX || e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-      target.y = e.pageY || e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-    };
-
-    const scrollCheck = () => {
-      animateHeader = document.body.scrollTop <= height;
+      target.x =
+        (e.pageX || e.clientX) -
+        (document.body.scrollLeft || document.documentElement.scrollLeft);
+      target.y =
+        (e.pageY || e.clientY) -
+        (document.body.scrollTop || document.documentElement.scrollTop);
     };
 
     const resize = () => {
       width = window.innerWidth;
       height = window.innerHeight;
-      largeHeaderRef.current.style.height = height + "px";
+      largeHeaderRef.current.style.height = height + 'px';
       canvasRef.current.width = width;
       canvasRef.current.height = height;
     };
@@ -168,19 +163,16 @@ const BackgroundWrapper = ({children}) => {
 
     // Cleanup on component unmount
     return () => {
-      window.removeEventListener("mousemove", mouseMove);
-      window.removeEventListener("scroll", scrollCheck);
-      window.removeEventListener("resize", resize);
+      window.removeEventListener('mousemove', mouseMove);
+      window.removeEventListener('resize', resize);
     };
   }, []);
 
   return (
     <div className="fixed" ref={largeHeaderRef}>
-        <canvas id="demo-canvas" ref={canvasRef}>
-            <div className="z-50">
-                {children}
-            </div>      
-        </canvas>
+      <canvas id="demo-canvas" ref={canvasRef}>
+        <div className="z-50">{children}</div>
+      </canvas>
     </div>
   );
 };

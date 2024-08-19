@@ -19,3 +19,35 @@
       #02000D 85%,
       #004AAD 100%);
 }
+
+.reverse-wrapper-bg {
+  background: linear-gradient(to top right,
+      #FF3C00 0%,
+      #010117 15%,
+      #010117 50%,
+      #02000D 85%,
+      #004AAD 100%);
+}
+
+.timeline-bg {
+  background: linear-gradient(to bottom right,
+      #FF3C00 0%,
+      #010117 15%,
+      #010117 45%,
+      #01061C 55%,
+      #01061C 100%);
+}
+
+.sponsors-bg {
+  background-image: url('./assets/SponsorsBackground.png');
+  background-size: cover;
+}
+
+.faq-bg {
+  background: linear-gradient(to top right,
+      #FF3C00 0%,
+      #010117 15%,
+      #010117 45%,
+      #01061C 55%,
+      #01061C 100%);
+}

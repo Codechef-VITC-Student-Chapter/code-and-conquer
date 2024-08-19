@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,6 +13,10 @@ const NavBar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <div
@@ -33,8 +38,21 @@ const NavBar = () => {
           alt="cyscomVITC_logo"
         />
       </div>
-      <div>
-        <ul className="flex gap-8">
+      {/* Hamburger Icon */}
+      <div className="md:hidden">
+        <button onClick={toggleMenu} className="focus:outline-none">
+          <div className="w-6 h-0.5 bg-white mb-1.5"></div>
+          <div className="w-6 h-0.5 bg-white mb-1.5"></div>
+          <div className="w-6 h-0.5 bg-white"></div>
+        </button>
+      </div>
+      {/* Menu Items */}
+      <div
+        className={`${
+          isMenuOpen ? 'flex' : 'hidden'
+        } flex-col absolute top-[calc(100%+16px)] left-0 w-full bg-black text-white p-4 md:relative md:flex md:flex-row md:gap-8 md:w-auto md:p-0`}
+      >
+        <ul className="flex flex-col gap-4 md:flex-row md:gap-8">
           {['Home', 'About Us', 'Timeline', 'Sponsors', 'FAQs'].map(
             (section) => (
               <Link
@@ -45,20 +63,21 @@ const NavBar = () => {
                 offset={-150}
                 duration={500}
                 className="font-semibold hover:underline duration-300 cursor-pointer"
+                onClick={() => setIsMenuOpen(false)}
               >
                 {section}
               </Link>
             )
           )}
         </ul>
-      </div>
-      <div className="flex items-center gap-4">
-        <button className="bg-red-500 text-white font-bold text-md px-4 py-2 rounded">
-          Download Brochure
-        </button>
-        <button className="bg-blue-500 text-white font-bold text-md px-4 py-2 rounded">
-          Register
-        </button>
+        <div className="flex flex-col gap-4 mt-4 md:mt-0 md:flex-row md:items-center">
+          <button className="bg-red-500 text-white font-bold text-md px-4 py-2 rounded">
+            Download Brochure
+          </button>
+          <button className="bg-blue-500 text-white font-bold text-md px-4 py-2 rounded">
+            Register
+          </button>
+        </div>
       </div>
     </div>
   );

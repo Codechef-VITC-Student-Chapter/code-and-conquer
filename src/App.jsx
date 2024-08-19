@@ -8,7 +8,7 @@ import FAQs from './screens/FAQs';
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center wrapper-bg">
+    <>
       <BackgroundWrapper />
       <NavBar />
       <HomePage />
@@ -16,7 +16,7 @@ function App() {
       <Timeline />
       <Sponsors />
       <FAQs />
-    </div>
+    </>
   );
 }
 
