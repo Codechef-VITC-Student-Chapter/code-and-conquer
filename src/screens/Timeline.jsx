@@ -43,7 +43,7 @@ const events = [
 
 const Timeline = () => {
   return (
-    <div className="flex flex-col items-center justify-center timeline-bg">
+    <div className="flex flex-col items-center justify-center timeline-bg" id="timeline">
       <div className="max-w-full min-h-screen flex flex-col justify-evenly">
         <span className="font-monoton text-[40px] md:text-[75px] font-normal md:leading-[140px] leading-[100px] text-center uppercase text-white">
           Timeline
