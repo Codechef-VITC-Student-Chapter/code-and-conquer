@@ -43,7 +43,7 @@
 }
 
 .sponsors-bg {
-  background-image: url('./assets/SponsorsBackground.png');
+  background: linear-gradient(to bottom, #04061b00 60%, #010827 100%), url('./assets/SponsorsBackground.png');
   background-size: cover;
 }
 
