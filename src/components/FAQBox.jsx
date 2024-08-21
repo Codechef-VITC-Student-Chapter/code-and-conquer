@@ -12,7 +12,8 @@ const FAQBox = ({ question, answer }) => {
     return (
         <div className="relative w-[80vw] mb-5">
             <div
-                className="faq-box-bg w-full h-[9vh] py-4 px-6 text-left pl-[3rem] text-white rounded-t-md focus:outline-none font-montserrat font-semibold text-2xl md:text-xl sm:text-lg flex justify-between items-center">
+                onClick={toggleDropdown}
+                className="faq-box-bg cursor-pointer w-full h-[9vh] py-4 px-6 text-left pl-[3rem] text-white rounded-t-md focus:outline-none font-montserrat font-semibold text-xl md:text-xl sm:text-lg flex justify-between items-center">
                 {question}
                 <button onClick={toggleDropdown} className="ml-4 text-xl focus:outline-none">
                     <img

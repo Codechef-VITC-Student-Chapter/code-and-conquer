@@ -5,38 +5,38 @@ import DiamondLine from '../components/DiamondLine';
 // Sample events data
 const events = [
   {
-    title: 'Event One',
+    title: 'HTML & CSS Bootcamp',
     description:
-      'This is a brief description of the first event that happened.',
-    date: 'Sep 7, 2024',
+      'Frontend Web development bootcamp on HTML & CSS.',
+    date: 'Sep 4, 2024',
     orange: true,
   },
   {
-    title: 'Event Two',
+    title: 'Javascript Bootcamp',
     description:
-      'This is a brief description of the second event that happened shortly after.',
+      'Frontend Web development bootcamp on Javascript.',
+    date: 'Sep 5, 2024',
+    orange: true,
+  },
+  {
+    title: 'Intrusion - A special Episode',
+    description:
+      'exploring the world of CTFs and web app vulnerabilities.',
+    date: 'Sep 7, 2024',
+    orange: false,
+  },
+  {
+    title: 'Backend and Databases Bootcamp',
+    description:
+      'Building backends, integrating frontends and working with databases.',
     date: 'Sep 8, 2024',
     orange: true,
   },
   {
-    title: 'Event Three',
+    title: 'Web Exploitment Essentials',
     description:
-      'This is a brief description of the third event that occurred on this day.',
+      'Exploring web app vulnerabilities.',
     date: 'Sep 9, 2024',
-    orange: false,
-  },
-  {
-    title: 'Event Four',
-    description:
-      'This is a brief description of the fourth event, occurring on this day.',
-    date: 'Sep 10, 2024',
-    orange: true,
-  },
-  {
-    title: 'Event Five',
-    description:
-      'This is a brief description of the fifth event which took place later on.',
-    date: 'Sep 11, 2024',
     orange: false,
   },
 ];
