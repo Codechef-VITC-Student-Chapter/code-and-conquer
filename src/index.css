@@ -60,6 +60,11 @@
   background-size: cover;
 }
 
+.popup-bg {
+  background: radial-gradient(circle at 50% 50%, #FF3C0033, transparent 80%), linear-gradient(to right,
+      #01082700 0%, #010827 5%, #010827 95%, #01082700 100%);
+}
+
 .custom-scroll {
   scrollbar-width: thin;
   /* Makes the scrollbar thin */
