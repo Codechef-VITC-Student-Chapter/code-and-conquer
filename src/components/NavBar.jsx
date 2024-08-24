@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
+import AlertDialog from './AlertDialog';
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen,setModalOpen]=useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,14 +73,15 @@ const NavBar = () => {
           )}
         </ul>
         <div className="flex flex-col gap-4 mt-4 md:mt-0 md:flex-row md:items-center">
-          <button className="bg-red-500 text-white font-bold text-md px-4 py-2 rounded">
+          <a href='https://drive.google.com/file/d/1tzuxo7iRGA28IaR3gvf5O5aLJd7bHSNr/view?usp=sharing' className="bg-red-500 text-white font-bold text-md px-4 py-2 rounded">
             Download Brochure
-          </button>
-          <button className="bg-blue-500 text-white font-bold text-md px-4 py-2 rounded">
+          </a>
+          <button onClick={()=>setModalOpen(true)} className="bg-blue-500 text-white font-bold text-md px-4 py-2 rounded">
             Register
           </button>
         </div>
       </div>
+      {isModalOpen && <AlertDialog setModalOpen={setModalOpen} />}    
     </div>
   );
 };

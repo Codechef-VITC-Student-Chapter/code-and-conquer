@@ -9,21 +9,21 @@ const Footer = () => {
           <div className="flex flex-col items-center font-bold text-sm px-4 pb-4">
             Connect with us on:
             <div className="flex gap-2 items-center">
-              <a href="#" target="_blank" className="h-6 w-6">
+              <a href="https://codechefvitcc.vercel.app/" target="_blank" className="h-6 w-6">
                 <img
                   className="h-6 w-6"
                   src="https://res.cloudinary.com/dxu5hlgvd/image/upload/v1720609534/FINAL_LOGO-CMZ27HCT_rvrnax.png"
                   alt="CodeChef VIT-C Site"
                 />
               </a>
-              <a href="#" target="_blank" className="h-6 w-6">
+              <a href="https://www.linkedin.com/company/codechef-vit-chennai-chapter/about/?viewAsMember=true" target="_blank" className="h-6 w-6">
                 <img
                   className="h-6 w-6"
                   src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
                   alt="LinkedIn"
                 />
               </a>
-              <a href="#" className="h-6 w-6">
+              <a href="https://www.instagram.com/codechef.vitc/" className="h-6 w-6">
                 <img
                   className="h-6 w-6"
                   src="https://res.cloudinary.com/dxu5hlgvd/image/upload/v1720083181/instagram_mqplcc.png"
