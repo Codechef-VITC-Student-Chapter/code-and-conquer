@@ -6,22 +6,19 @@ import DiamondLine from '../components/DiamondLine';
 const events = [
   {
     title: 'HTML & CSS Bootcamp',
-    description:
-      'Frontend Web development bootcamp on HTML & CSS.',
+    description: 'Frontend Web development bootcamp on HTML & CSS.',
     date: 'Sep 4, 2024',
     orange: true,
   },
   {
     title: 'Javascript Bootcamp',
-    description:
-      'Frontend Web development bootcamp on Javascript.',
+    description: 'Frontend Web development bootcamp on Javascript.',
     date: 'Sep 5, 2024',
     orange: true,
   },
   {
     title: 'Intrusion - A special Episode',
-    description:
-      'exploring the world of CTFs and web app vulnerabilities.',
+    description: 'exploring the world of CTFs and web app vulnerabilities.',
     date: 'Sep 7, 2024',
     orange: false,
   },
@@ -34,8 +31,7 @@ const events = [
   },
   {
     title: 'Web Exploitment Essentials',
-    description:
-      'Exploring web app vulnerabilities.',
+    description: 'Exploring web app vulnerabilities.',
     date: 'Sep 9, 2024',
     orange: false,
   },
@@ -43,12 +39,15 @@ const events = [
 
 const Timeline = () => {
   return (
-    <div className="flex flex-col items-center justify-center timeline-bg" id="timeline">
+    <div
+      className="flex flex-col items-center justify-center timeline-bg"
+      id="timeline"
+    >
       <div className="max-w-full min-h-screen flex flex-col justify-evenly">
         <span className="font-monoton text-[40px] md:text-[75px] font-normal md:leading-[140px] leading-[100px] text-center uppercase text-white">
           Timeline
         </span>
-        <div className="relative w-full overflow-x-auto">
+        <div className="relative w-full custom-scroll overflow-x-auto">
           <div className="grid grid-cols-5 gap-4 p-6 w-[1500px]">
             {/* Top Row */}
             {events.map((event, index) => (
