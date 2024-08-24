@@ -3,7 +3,7 @@ import React from 'react';
 const AlertDialog = ({ setModalOpen }) => {
   return (
     <div className="fixed z-50 top-0 flex h-screen w-screen justify-center items-center backdrop-blur-md">
-      <div className="p-16 md:w-3/4 popup-bg rounded-md flex flex-col justify-center gap-4 m-auto">
+      <div className="p-16 md:w-3/4 popup-bg rounded-md flex flex-col justify-top gap-4 m-auto h-3/4 md:h-fit overflow-y-auto">
         <div className="flex justify-end">
           <button
             onClick={() => setModalOpen(false)}
