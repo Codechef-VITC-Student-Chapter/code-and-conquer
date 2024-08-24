@@ -18,28 +18,27 @@
 .wrapper-bg {
   background: linear-gradient(to bottom right,
       #FF3C00 0%,
-      #010117 15%,
+      #731e04 15%,
+      #010117 35%,
       #010117 50%,
-      #02000D 85%,
+      #02000D 65%,
+      #001e45 85%,
       #004AAD 100%);
 }
 
 .reverse-wrapper-bg {
-  background: linear-gradient(to top right,
+  background: linear-gradient(to bottom, #01011700 60%, #010117 100%), linear-gradient(to top right,
       #FF3C00 0%,
-      #010117 15%,
+      #731e04 15%,
+      #010117 35%,
       #010117 50%,
-      #02000D 85%,
+      #02000D 65%,
+      #001e45 85%,
       #004AAD 100%);
 }
 
 .timeline-bg {
-  background: linear-gradient(to bottom right,
-      #FF3C00 0%,
-      #010117 15%,
-      #010117 45%,
-      #01061C 55%,
-      #01061C 100%);
+  background: linear-gradient(to bottom, #00061c00 60%, #00061c 100%), #010117;
 }
 
 .sponsors-bg {
@@ -50,8 +49,13 @@
 .faq-bg {
   background: linear-gradient(to top right,
       #FF3C00 0%,
-      #010117 15%,
+      #010117 25%,
       #010117 45%,
       #01061C 55%,
       #01061C 100%);
+}
+
+.footer-background {
+  background: url('./assets/FooterBackground.png');
+  background-size: cover;
 }
