@@ -5,6 +5,7 @@ import Sponsors from './screens/Sponsors';
 import Timeline from './screens/Timeline';
 import BackgroundWrapper from './components/BackgroundWrapper';
 import FAQs from './screens/FAQs';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Timeline />
       <Sponsors />
       <FAQs />
+      <Footer />
     </>
   );
 }
