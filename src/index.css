@@ -59,3 +59,38 @@
   background: url('./assets/FooterBackground.png');
   background-size: cover;
 }
+
+.custom-scroll {
+  scrollbar-width: thin;
+  /* Makes the scrollbar thin */
+  scrollbar-color: #67e8f9 #f1f1f100;
+  /* Thumb color and track color */
+  padding-bottom: 10px;
+}
+
+
+.custom-scroll::-webkit-scrollbar {
+  width: 10px;
+  /* Adjust the width of the scrollbar */
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #f1f1f100;
+  /* Light background for the scrollbar track */
+  border-radius: 10px;
+  /* Rounded corners for the track */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #67e8f9;
+  /* Darker color for the scrollbar thumb */
+  border-radius: 10px;
+  /* Rounded corners for the thumb */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #67e8f9;
+  border-radius: 10px;
+
+  /* Darker color when hovering over the thumb */
+}

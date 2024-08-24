@@ -1,16 +1,15 @@
 .faq-bg-img {
-    background-image: url('../assets/faq/bg-img-faq.png'); 
+    background-image: url('../assets/faq/bg-img-faq.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
 
-.faq-box-bg{
+.faq-box-bg {
     background: linear-gradient(90deg, rgba(143, 2, 156, 0.5) 0%, rgba(0, 102, 138, 0.5) 100%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+        linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     padding-top: 16px;
     padding-bottom: 16px;
-    border-radius: 0; 
+    border-radius: 0;
 }
-

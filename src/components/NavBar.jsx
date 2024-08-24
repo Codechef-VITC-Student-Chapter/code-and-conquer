@@ -62,7 +62,7 @@ const NavBar = () => {
                 smooth={true}
                 offset={-150}
                 duration={500}
-                className="font-semibold hover:underline duration-300 cursor-pointer"
+                className="font-semibold hover:underline duration-300 cursor-pointer flex items-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {section}

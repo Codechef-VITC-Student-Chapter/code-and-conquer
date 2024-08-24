@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/faq.css';
-import arrow from '../assets/faq/arrow.png'; // Import the arrow image
-
+import arrow from '../assets/faq/arrow.png';
 const FAQBox = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,7 +22,7 @@ const FAQBox = ({ question, answer }) => {
           <img
             src={arrow}
             alt="Arrow"
-            className={`w-[40px] h-[24px] transition-transform duration-300 ${
+            className={`w-[40px] h-[40px] transition-transform duration-300 ${
               isOpen ? 'rotate-180' : 'rotate-0'
             }`}
           />
