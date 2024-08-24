@@ -3,7 +3,7 @@ import React from 'react'
 const AlertDialog = ({setModalOpen}) => {
   return (
     <div className='absolute top-0 flex h-screen w-screen justify-center items-center'>
-        <div className='p-16 bg-black rounded-md flex flex-col justify-center gap-4 m-auto '>
+        <div className='p-16 sponsors-bg rounded-md flex flex-col justify-center gap-4 m-auto '>
             <div className='flex justify-end'>
                 <button onClick={()=>setModalOpen(false)} className='px-4 bg-red-500 py-2 rounded-md border-2 border-white'>Close</button>
             </div>

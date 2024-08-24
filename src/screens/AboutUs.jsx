@@ -52,7 +52,7 @@ const AboutUs = () => {
         <img
           width={180}
           height={180}
-          src="https://res.cloudinary.com/dxu5hlgvd/image/upload/v1720609534/FINAL_LOGO-CMZ27HCT_rvrnax.png"
+          src="https://res.cloudinary.com/dxu5hlgvd/image/upload/v1724520785/image-removebg-preview_3_tfczm9.png"
           alt="cyscom_logo"
           className="mt-4 md:mt-0 md:ml-4"
         />

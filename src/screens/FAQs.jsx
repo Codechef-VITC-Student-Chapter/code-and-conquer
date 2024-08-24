@@ -16,11 +16,6 @@ const FAQs = () => {
         <FAQBox question={"In mi nulla, fringilla vestibulum?"} answer={"In mi nulla, fringilla vestibulum?"}></FAQBox>
         <FAQBox question={"In mi nulla, fringilla vestibulum?"} answer={"In mi nulla, fringilla vestibulum?"}></FAQBox>
         <FAQBox question={"In mi nulla, fringilla vestibulum?"} answer={"In mi nulla, fringilla vestibulum?"}></FAQBox>
-        <FAQBox question={"In mi nulla, fringilla vestibulum?"} answer={"In mi nulla, fringilla vestibulum?"}></FAQBox>
-        <FAQBox question={"In mi nulla, fringilla vestibulum?"} answer={"In mi nulla, fringilla vestibulum?"}></FAQBox>
-        <FAQBox question={"In mi nulla, fringilla vestibulum?"} answer={"In mi nulla, fringilla vestibulum?"}></FAQBox>
-        <FAQBox question={"In mi nulla, fringilla vestibulum?"} answer={"In mi nulla, fringilla vestibulum?"}></FAQBox>
-        <FAQBox question={"In mi nulla, fringilla vestibulum?"} answer={"In mi nulla, fringilla vestibulum?"}></FAQBox>
       </div>
     </div>
   );

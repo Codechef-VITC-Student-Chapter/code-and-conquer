@@ -37,7 +37,7 @@ const Footer = () => {
               <a href="#" className="h-6 w-6">
                 <img
                   className="h-6 w-6"
-                  src="https://res.cloudinary.com/dxu5hlgvd/image/upload/v1720609534/FINAL_LOGO-CMZ27HCT_rvrnax.png"
+                  src="https://res.cloudinary.com/dxu5hlgvd/image/upload/v1724520785/image-removebg-preview_3_tfczm9.png"
                   alt="Cyscom VIT Site"
                 />
               </a>

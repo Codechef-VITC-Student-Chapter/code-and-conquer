@@ -17,7 +17,7 @@ const Sponsors = () => {
             title sponsor
           </div>
 
-          <img src={hyndai} alt="Sponsor" className="w-[180px] h-[180px] " />
+          <img src="src/assets/LogoPlaceholder.webp" alt="Sponsor" className="border-2 border-white rounded-lg p-2 w-[180px] h-[180px] " />
         </div>
 
         <div className="flex items-center justify-center mb-8">
@@ -26,11 +26,11 @@ const Sponsors = () => {
           </div>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-12">
-          <img src={apple} alt="Sponsor" className="w-32 h-32" />
-          <img src={apple} alt="Sponsor" className="w-32 h-32" />
+          <img src="src/assets/LogoPlaceholder.webp" alt="Sponsor" className="border-white border-2 p-2 rounded-md w-32 h-32" />
+          <img src="src/assets/LogoPlaceholder.webp" alt="Sponsor" className="border-white border-2 p-2 rounded-md w-32 h-32" />
 
-          <img src={apple} alt="Sponsor" className="w-32 h-32" />
-          <img src={apple} alt="Sponsor" className="w-32 h-32" />
+          <img src="src/assets/LogoPlaceholder.webp" alt="Sponsor" className="border-white border-2 p-2 rounded-md w-32 h-32" />
+          <img src="src/assets/LogoPlaceholder.webp" alt="Sponsor" className="border-white border-2 p-2 rounded-md w-32 h-32" />
         </div>
       </div>
     </div>
