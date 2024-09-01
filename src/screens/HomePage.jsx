@@ -4,7 +4,7 @@ import '../styles/homepage.css';
 import AlertDialog from '../components/AlertDialog';
 
 function HomePage() {
-  const targetDate = new Date('2024-09-09T00:00:00');
+  const targetDate = new Date('2024-09-05T00:00:00');
   const currentTime = new Date();
   const timeDifference = targetDate - currentTime;
 
