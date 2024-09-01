@@ -66,7 +66,7 @@ function HomePage() {
 
         <button
           onClick={() => setModalOpen(true)}
-          className="bg-blue-500 text-white text-md px-5 py-3 rounded mt-10 text-3xl"
+          className="bg-blue-500 text-white text-md px-5 py-3 rounded mt-10 text-3xl z-50"
         >
           Register
         </button>
