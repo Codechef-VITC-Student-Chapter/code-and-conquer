@@ -4,7 +4,7 @@ import '../styles/homepage.css';
 import AlertDialog from '../components/AlertDialog';
 
 function HomePage() {
-  const targetDate = new Date('2024-09-09T00:00:00');
+  const targetDate = new Date('2024-09-05T00:00:00');
   const currentTime = new Date();
   const timeDifference = targetDate - currentTime;
 
@@ -59,11 +59,12 @@ function HomePage() {
             <div className="text-xl sm:text-2xl lg:text-3xl">{seconds}</div>
             <div className="text-xs sm:text-sm lg:text-base">Seconds</div>
           </div>
+          <div className='text-center col-span-4 text-xl font-semibold'>To the first event!</div>
         </div>
 
         <button
           onClick={() => setModalOpen(true)}
-          className="bg-blue-500 text-white text-md px-5 py-3 rounded mt-10 text-3xl"
+          className="bg-blue-500 text-white z-10 text-md px-8 py-4 rounded mt-10 text-3xl"
         >
           Register
         </button>
