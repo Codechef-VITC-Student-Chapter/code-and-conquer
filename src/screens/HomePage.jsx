@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import '../styles/homepage.css';
+import AlertDialog from '../components/AlertDialog';
 
 function HomePage() {
   const targetDate = new Date('2024-09-09T00:00:00');
@@ -8,6 +9,7 @@ function HomePage() {
   const timeDifference = targetDate - currentTime;
 
   const [timer, setTimer] = useState(timeDifference);
+  const [isModalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -58,6 +60,15 @@ function HomePage() {
             <div className="text-xs sm:text-sm lg:text-base">Seconds</div>
           </div>
         </div>
+
+        <button
+          onClick={() => setModalOpen(true)}
+          className="bg-blue-500 text-white text-md px-5 py-3 rounded mt-10 text-3xl"
+        >
+          Register
+        </button>
+
+        {isModalOpen && <AlertDialog setModalOpen={setModalOpen} />}
       </div>
     </div>
   );
