@@ -74,18 +74,18 @@ const NavBar = () => {
             )}
           </ul>
           <div className="flex flex-col gap-4 mt-4 md:mt-0 md:flex-row md:items-center">
-            <a
+            {/* <a
               href="https://drive.google.com/file/d/1tzuxo7iRGA28IaR3gvf5O5aLJd7bHSNr/view?usp=sharing"
               className="bg-red-500 text-white font-bold text-md px-4 py-2 rounded"
             >
               Download Brochure
-            </a>
-            {/* <button
+            </a> */}
+            <button
               onClick={() => setModalOpen(true)}
               className="bg-blue-500 text-white font-bold text-md px-4 py-2 rounded"
             >
               Register
-            </button> */}
+            </button>
           </div>
         </div>{' '}
       </div>
