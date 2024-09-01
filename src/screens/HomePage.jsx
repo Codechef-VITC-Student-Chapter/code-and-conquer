@@ -59,6 +59,9 @@ function HomePage() {
             <div className="text-xl sm:text-2xl lg:text-3xl">{seconds}</div>
             <div className="text-xs sm:text-sm lg:text-base">Seconds</div>
           </div>
+          <div className='text-xl font-semibold text-center col-span-4'>
+              To the first event!
+          </div>
         </div>
 
         <button
