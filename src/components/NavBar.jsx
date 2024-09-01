@@ -80,12 +80,12 @@ const NavBar = () => {
             >
               Download Brochure
             </a>
-            <button
+            {/* <button
               onClick={() => setModalOpen(true)}
               className="bg-blue-500 text-white font-bold text-md px-4 py-2 rounded"
             >
               Register
-            </button>
+            </button> */}
           </div>
         </div>{' '}
       </div>
