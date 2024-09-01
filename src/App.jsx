@@ -15,8 +15,8 @@ function App() {
       <HomePage />
       <AboutUs />
       <Timeline />
-      {/* <Sponsors /> */}
-      {/* <FAQs /> */}
+      <Sponsors />
+      <FAQs />
       <Footer />
     </>
   );
