@@ -44,7 +44,7 @@ const AlertDialog = ({ setModalOpen }) => {
               className="px-4 py-2 rounded-lg border-2 border-dashed border-white shadow-lg w-60 h-48 bg-gradient-to-tr from-orange-700 via-40% via-[#240422] to-blue-900 text-white"
             >
               <a href="https://vitchennaievents.com/conf1/" className="text-lg font-bold m-2 text-center">
-                Code N' Conquer - Sept 8 & 9 - Sunday & Monday {'->'}
+                Code And Conquer - Sept 8 & 9 - Sunday & Monday {'->'}
               </a>
             </button>
           </a>
