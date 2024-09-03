@@ -32,10 +32,10 @@ const AlertDialog = ({ setModalOpen }) => {
               disabled
               className="px-4 py-2 rounded-lg border-2 border-dashed border-white shadow-lg w-60 h-48 bg-gradient-to-tr from-[#240422] from-65% to-blue-900 text-white"
             >
-              <h3 className="text-lg font-bold m-2 text-center">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWweqYArG6ofJ0t0B6uK2BrHnBPEg4sBqrm5TeHflvG-_sLA/viewform" className="text-lg font-bold m-2 text-center">
                 Intrusion Special Episode - Sept 7th - Saturday
-              </h3>
-              <p className="text-sm text-center mb-3">Coming Soon....</p>
+              </a>
+
             </button>
           </a>
           <a>
