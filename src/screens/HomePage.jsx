@@ -44,19 +44,19 @@ function HomePage() {
 
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4">
           <div className="bg-gradient-to-tr from-[#240422] to-purple-950 w-full h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 gap-4 p-4 rounded-xl border-white border-2 flex flex-col items-center justify-center">
-            <div className="text-xl sm:text-2xl lg:text-3xl">{days}</div>
+            {days < 0 ? <div className="text-xl sm:text-2xl lg:text-3xl">00</div> : <div className="text-xl sm:text-2xl lg:text-3xl">{days}</div>}
             <div className="text-xs sm:text-sm lg:text-base">Days</div>
           </div>
           <div className="bg-gradient-to-tr from-[#240422] to-purple-950 w-full h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 gap-4 p-4 rounded-xl border-white border-2 flex flex-col items-center justify-center">
-            <div className="text-xl sm:text-2xl lg:text-3xl">{hours}</div>
+            {hours < 0 ? <div className="text-xl sm:text-2xl lg:text-3xl">00</div> : <div className="text-xl sm:text-2xl lg:text-3xl">{hours}</div>}
             <div className="text-xs sm:text-sm lg:text-base">Hours</div>
           </div>
           <div className="bg-gradient-to-tr from-[#240422] to-purple-950 w-full h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 gap-4 p-4 rounded-xl border-white border-2 flex flex-col items-center justify-center">
-            <div className="text-xl sm:text-2xl lg:text-3xl">{minutes}</div>
+            {minutes < 0 ? <div className="text-xl sm:text-2xl lg:text-3xl">00</div> : <div className="text-xl sm:text-2xl lg:text-3xl">{minutes}</div>}
             <div className="text-xs sm:text-sm lg:text-base">Minutes</div>
           </div>
           <div className="bg-gradient-to-tr from-[#240422] to-purple-950 w-full h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 gap-4 p-4 rounded-xl border-white border-2 flex flex-col items-center justify-center">
-            <div className="text-xl sm:text-2xl lg:text-3xl">{seconds}</div>
+            {seconds < 0 ? <div className="text-xl sm:text-2xl lg:text-3xl">00</div> : <div className="text-xl sm:text-2xl lg:text-3xl">{seconds}</div>}
             <div className="text-xs sm:text-sm lg:text-base">Seconds</div>
           </div>
           <div className='text-xl font-semibold text-center col-span-4'>
